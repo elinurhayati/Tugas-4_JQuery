@@ -1,0 +1,95 @@
+<HTML>
+<HEAD>
+	<SCRIPT type="text/javascript" src="jquery-3.6.0.js"></SCRIPT>
+	<SCRIPT type="text/javascript">
+		$(document).ready(function(){
+			$(".tampilkan1").addClass("button").click(function(){
+				$("#picture1").show("normal");
+			});
+			$(".sembunyikan1").addClass("button").click(function(){
+				$("#picture1").hide("normal");
+			});
+			$(".tampilkan2").addClass("button").click(function(){
+				$("#picture2").show("normal");
+			});
+			$(".sembunyikan2").addClass("button").click(function(){
+				$("#picture2").hide("normal");
+			});
+			$(".tampilkan3").addClass("button").click(function(){
+				$("#picture3").show("normal");
+			});
+			$(".sembunyikan3").addClass("button").click(function(){
+				$("#picture3").hide("normal");
+			});
+		});
+	</SCRIPT>
+
+	<STYLE type="text/css">
+		*{
+			font-family: Verdana;
+		}
+		.button{
+			font-weight: bold;
+			width: 120px;
+			height: 35px;
+			margin-top: 2%;
+			margin-bottom: 2%;
+			margin-left: 0%;
+			border-radius: 8px 8px;
+			cursor: pointer;
+			box-shadow: 2px 2px 2px grey;
+		}
+		.button:hover{
+			background: yellow;
+			box-shadow: 2px 2px 2px black;
+		}
+		.pic{
+			width : 300px;
+			height: 300px;
+			margin-top: 3%;
+			margin-bottom: 3%;
+		}
+		.tabel{
+			margin: 0 auto;
+			width: 100%;
+			text-align: middle;
+		}
+		
+	</STYLE>
+
+</HEAD>
+
+<BODY>
+	<div>
+		<table class="tabel" border="1">
+			<tr>
+				<th> GAMBAR 1 </th>
+				<th> GAMBAR 2 </th>
+				<th> GAMBAR 3 </th>
+			</tr>
+
+			<tr>
+				<th> 
+					<button class="tampilkan1"> Tampilkan </button>
+					<button class="sembunyikan1"> Sembunyikan </button> 
+				</th>
+				<th> 
+					<button class="tampilkan2"> Tampilkan </button>
+					<button class="sembunyikan2"> Sembunyikan </button> 
+				</th>
+				<th> 
+					<button class="tampilkan3"> Tampilkan </button>
+					<button class="sembunyikan3"> Sembunyikan </button> 
+				</th>
+			</tr>
+
+			<tr>
+				<th> <img id="picture1" src="gambar1.jpeg" class="pic"> </th>
+				<th> <img id="picture2" src="gambar2.jpeg" class="pic"> </th>
+				<th> <img id="picture3" src="gambar3.jpeg" class="pic"> </th>
+			</tr>
+
+		</table>
+	</div>
+</BODY>
+</HTML>

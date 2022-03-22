@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+	<SCRIPT type="text/javascript" src="jquery-3.6.0.js"></SCRIPT>
+	<SCRIPT type="text/javascript">
+		$(document).ready(function(){
+		$("#daftar").addClass("merahkuning");
+		$(".subdaftar").addClass("kuninghitam");});
+	</SCRIPT>
+	<STYLE type="text/css">
+		.merahkuning{
+			color:  red;
+			font-weight: bold;
+			background-color: yellow;
+			padding: 3px;
+		}
+		.kuninghitam{
+			color: blue;
+			background-color: green;
+		}
+	</STYLE>
+</HEAD>
+
+<BODY>
+	<div>
+		<p>paragraf pertama</p>
+	</div>
+	<div>
+		<ul id="daftar">
+			<li>item 1</li>
+			<li class="subdaftar">item 2</li>
+			<li>item 3</li>
+		</ul>
+	</div>
+</BODY>
+</HTML>

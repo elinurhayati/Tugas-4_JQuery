@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+	<SCRIPT type="text/javascript" src="jquery-3.6.0.js"></SCRIPT>
+	<SCRIPT type="text/javascript">
+		$(document).ready(function(){
+			$(".button1").dblclick(function(){
+				$("#klik1").css("background-color", "#ff968a");
+			});
+			$(".button2").dblclick(function(){
+				$("#klik2").css("background-color", "#abdee6");
+			});
+			$(".button3").dblclick(function(){
+				$("#klik3").css("background-color", "#b6cfb6");
+			});
+			$(".button4").dblclick(function(){
+				$("#klik4").css("background-color", "#ffcba2");
+			});
+			$(".button5").dblclick(function(){
+				$("#klik5").css("background-color", "#cbaacb");
+			});
+		});
+
+	</SCRIPT>
+
+</HEAD>
+
+<STYLE type="text/css">
+		*{
+			font-family: Verdana;
+		}
+		.teks{
+			margin-top: 2%;
+			margin-left: 30%;
+			margin-right: 30%;
+			text-align: center;
+			font-size: 18px;
+		}
+		button{
+			background-color: yellow;
+			width: 150px;
+			height: 150px;
+			padding: 10px;
+			border: 2px solid;
+			margin-left: 6%;
+			margin-top: 3%;
+			cursor: pointer;
+			font-weight: bold;
+		}
+
+</STYLE>
+
+<BODY>
+	<div>
+		<h2 class="teks"> Klik 2x pada setiap kotak untuk mengubah warnanya </h2>
+		<button class="button1" id="klik1"> Merah </button> 
+		<button class="button2" id="klik2"> Biru </button> 
+		<button class="button3" id="klik3"> Hijau </button> 
+		<button class="button4" id="klik4"> Orange </button> 
+		<button class="button5" id="klik5"> Ungu </button> 
+	</div>
+</BODY>
+</HTML>
